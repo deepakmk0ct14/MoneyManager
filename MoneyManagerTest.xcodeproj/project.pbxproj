@@ -15,6 +15,7 @@
 		00929BB923125C38006B8413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00929BB723125C38006B8413 /* LaunchScreen.storyboard */; };
 		00929BC423125C39006B8413 /* MoneyManagerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929BC323125C39006B8413 /* MoneyManagerTestTests.swift */; };
 		00929BCF23146749006B8413 /* LoginGooleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929BCE23146749006B8413 /* LoginGooleService.swift */; };
+		00929BD423146FEA006B8413 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929BD323146FEA006B8413 /* LoginViewController.swift */; };
 		33E071FEA9DB34AADDC1E363 /* Pods_MoneyManagerTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DFDA1BE93C07CBD21C202B /* Pods_MoneyManagerTestTests.framework */; };
 		7E2DAF1BEA804467C7B4E741 /* Pods_MoneyManagerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A97089881AC9FBC96222BB /* Pods_MoneyManagerTest.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		00929BC323125C39006B8413 /* MoneyManagerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyManagerTestTests.swift; sourceTree = "<group>"; };
 		00929BC523125C39006B8413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00929BCE23146749006B8413 /* LoginGooleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGooleService.swift; sourceTree = "<group>"; };
+		00929BD323146FEA006B8413 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		16A6032F34C672BAF66403EA /* Pods-MoneyManagerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerTest.debug.xcconfig"; path = "Target Support Files/Pods-MoneyManagerTest/Pods-MoneyManagerTest.debug.xcconfig"; sourceTree = "<group>"; };
 		21EFF7060EF67F9985406F09 /* Pods-MoneyManagerTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyManagerTestTests.release.xcconfig"; path = "Target Support Files/Pods-MoneyManagerTestTests/Pods-MoneyManagerTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		29DFDA1BE93C07CBD21C202B /* Pods_MoneyManagerTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyManagerTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +98,7 @@
 				00929BAB23125C36006B8413 /* AppDelegate.swift */,
 				00929BAD23125C36006B8413 /* ViewController.swift */,
 				00929BCE23146749006B8413 /* LoginGooleService.swift */,
+				00929BD223146FDE006B8413 /* Login */,
 				00929BAF23125C36006B8413 /* Main.storyboard */,
 				00929BB523125C38006B8413 /* Assets.xcassets */,
 				00929BB723125C38006B8413 /* LaunchScreen.storyboard */,
@@ -112,6 +115,14 @@
 				00929BC523125C39006B8413 /* Info.plist */,
 			);
 			path = MoneyManagerTestTests;
+			sourceTree = "<group>";
+		};
+		00929BD223146FDE006B8413 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				00929BD323146FEA006B8413 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		90EBE0099511FCF4CDC3321E /* Pods */ = {
@@ -323,6 +334,7 @@
 				00929BAE23125C36006B8413 /* ViewController.swift in Sources */,
 				00929BB423125C36006B8413 /* MoneyManagerTest.xcdatamodeld in Sources */,
 				00929BCF23146749006B8413 /* LoginGooleService.swift in Sources */,
+				00929BD423146FEA006B8413 /* LoginViewController.swift in Sources */,
 				00929BAC23125C36006B8413 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
