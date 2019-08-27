@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006849902314BBD500908085 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068498F2314BBD500908085 /* DashboardViewController.swift */; };
+		006849932314BC2600908085 /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006849922314BC2600908085 /* LoginNavigator.swift */; };
+		006849952314BF9400908085 /* ForgotPassowrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006849942314BF9400908085 /* ForgotPassowrdViewController.swift */; };
+		006849972314BFAE00908085 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006849962314BFAE00908085 /* SignUpViewController.swift */; };
 		00929BAC23125C36006B8413 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929BAB23125C36006B8413 /* AppDelegate.swift */; };
 		00929BAE23125C36006B8413 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00929BAD23125C36006B8413 /* ViewController.swift */; };
 		00929BB123125C36006B8413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00929BAF23125C36006B8413 /* Main.storyboard */; };
@@ -31,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0068498F2314BBD500908085 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		006849922314BC2600908085 /* LoginNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
+		006849942314BF9400908085 /* ForgotPassowrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassowrdViewController.swift; sourceTree = "<group>"; };
+		006849962314BFAE00908085 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		00929BA823125C36006B8413 /* MoneyManagerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyManagerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00929BAB23125C36006B8413 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00929BAD23125C36006B8413 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0068498E2314BBBC00908085 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0068498F2314BBD500908085 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		006849912314BC0500908085 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				00929BCE23146749006B8413 /* LoginGooleService.swift */,
+				006849922314BC2600908085 /* LoginNavigator.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		00929B9F23125C36006B8413 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +122,8 @@
 			children = (
 				00929BAB23125C36006B8413 /* AppDelegate.swift */,
 				00929BAD23125C36006B8413 /* ViewController.swift */,
-				00929BCE23146749006B8413 /* LoginGooleService.swift */,
+				006849912314BC0500908085 /* Helper */,
+				0068498E2314BBBC00908085 /* Dashboard */,
 				00929BD223146FDE006B8413 /* Login */,
 				00929BAF23125C36006B8413 /* Main.storyboard */,
 				00929BB523125C38006B8413 /* Assets.xcassets */,
@@ -121,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				00929BD323146FEA006B8413 /* LoginViewController.swift */,
+				006849942314BF9400908085 /* ForgotPassowrdViewController.swift */,
+				006849962314BFAE00908085 /* SignUpViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -331,9 +359,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006849952314BF9400908085 /* ForgotPassowrdViewController.swift in Sources */,
 				00929BAE23125C36006B8413 /* ViewController.swift in Sources */,
+				006849902314BBD500908085 /* DashboardViewController.swift in Sources */,
 				00929BB423125C36006B8413 /* MoneyManagerTest.xcdatamodeld in Sources */,
+				006849932314BC2600908085 /* LoginNavigator.swift in Sources */,
 				00929BCF23146749006B8413 /* LoginGooleService.swift in Sources */,
+				006849972314BFAE00908085 /* SignUpViewController.swift in Sources */,
 				00929BD423146FEA006B8413 /* LoginViewController.swift in Sources */,
 				00929BAC23125C36006B8413 /* AppDelegate.swift in Sources */,
 			);
