@@ -22,7 +22,11 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func onGoogleSignIn(_ sender: UIButton) {
-        GIDSignIn.sharedInstance().signIn()
+        if !GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            GIDSignIn.sharedInstance().signIn()
+        }else {
+            loginVaigator?.navigate(to: .loginCompleted)
+        }
     }
     @IBAction func onFacebookSignIn(_ sender: UIButton) {
     }
