@@ -7,6 +7,10 @@ target 'MoneyManagerTest' do
 
   # Pods for MoneyManagerTest
     pod 'GoogleSignIn'
+    pod 'FacebookCore'
+    pod 'FacebookLogin'
+    pod 'FacebookShare'
+    pod 'FBSDKLoginKit'
   target 'MoneyManagerTestTests' do
     inherit! :search_paths
     # Pods for testing

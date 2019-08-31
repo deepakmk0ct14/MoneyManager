@@ -8,16 +8,18 @@
 
 import UIKit
 import GoogleSignIn
+import FBSDKLoginKit
+
 class SplashScreenViewController: UIViewController {
     var initialNavigator: InitialRouter?
     override func viewDidLoad() {
         super.viewDidLoad()
         initialNavigator = InitialRouter(currentViewController: self)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            if !GIDSignIn.sharedInstance().hasAuthInKeychain() {
-                self.initialNavigator?.navigate(to: .notLoggedIn)
+            if GIDSignIn.sharedInstance().hasAuthInKeychain() || (AccessToken.current != nil)  {
+               self.initialNavigator?.navigate(to: .loggedIn)
             } else {
-                self.initialNavigator?.navigate(to: .loggedIn)
+                 self.initialNavigator?.navigate(to: .notLoggedIn)
             }
         }
     }

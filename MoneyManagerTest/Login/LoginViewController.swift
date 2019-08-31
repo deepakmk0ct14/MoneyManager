@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleSignIn
+import FBSDKLoginKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var mEmailTextField: UITextField!
@@ -29,13 +30,21 @@ class LoginViewController: UIViewController {
         }
     }
     @IBAction func onFacebookSignIn(_ sender: UIButton) {
+        let loginManager = LoginManager()
+        
+        loginManager.logIn(permissions: [ "publicProfile","privateProfile" ], from: self) { (loginResult, error) in
+            print("User cancelled login.", loginResult)
+        }
     }
     @IBAction func onSignInButton(_ sender: UIButton) {
+        
     }
 }
 
 extension LoginViewController: GIDSignInUIDelegate, GIDSignInDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        loginVaigator?.navigate(to: .loginCompleted)
+        if user != nil {
+            loginVaigator?.navigate(to: .loginCompleted)
+        }
     }
 }

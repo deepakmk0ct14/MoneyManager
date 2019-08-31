@@ -10,6 +10,12 @@
 		0029D254231799F100DBF06D /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D253231799F100DBF06D /* LoginNavigator.swift */; };
 		0029D25723179AF500DBF06D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D25623179AF500DBF06D /* SplashScreenViewController.swift */; };
 		0029D25923179B4800DBF06D /* InitialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D25823179B4800DBF06D /* InitialRouter.swift */; };
+		0029D25B2317E5A900DBF06D /* LoginFacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D25A2317E5A900DBF06D /* LoginFacebookService.swift */; };
+		0029D25E23181D7200DBF06D /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D25D23181D7200DBF06D /* DashboardRouter.swift */; };
+		0029D2602318215C00DBF06D /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D25F2318215C00DBF06D /* DashboardCollectionViewCell.swift */; };
+		0029D264231997A300DBF06D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D263231997A300DBF06D /* CoreDataManager.swift */; };
+		0029D26C231A07B200DBF06D /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D26A231A07B200DBF06D /* Event+CoreDataClass.swift */; };
+		0029D26D231A07B200DBF06D /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0029D26B231A07B200DBF06D /* Event+CoreDataProperties.swift */; };
 		006849902314BBD500908085 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068498F2314BBD500908085 /* DashboardViewController.swift */; };
 		006849952314BF9400908085 /* ForgotPassowrdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006849942314BF9400908085 /* ForgotPassowrdViewController.swift */; };
 		006849972314BFAE00908085 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006849962314BFAE00908085 /* SignUpViewController.swift */; };
@@ -40,6 +46,12 @@
 		0029D253231799F100DBF06D /* LoginNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
 		0029D25623179AF500DBF06D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		0029D25823179B4800DBF06D /* InitialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialRouter.swift; sourceTree = "<group>"; };
+		0029D25A2317E5A900DBF06D /* LoginFacebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFacebookService.swift; sourceTree = "<group>"; };
+		0029D25D23181D7200DBF06D /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		0029D25F2318215C00DBF06D /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		0029D263231997A300DBF06D /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0029D26A231A07B200DBF06D /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0029D26B231A07B200DBF06D /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0068498F2314BBD500908085 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		006849942314BF9400908085 /* ForgotPassowrdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassowrdViewController.swift; sourceTree = "<group>"; };
 		006849962314BFAE00908085 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +101,7 @@
 			children = (
 				0029D253231799F100DBF06D /* LoginNavigator.swift */,
 				0029D25823179B4800DBF06D /* InitialRouter.swift */,
+				0029D25D23181D7200DBF06D /* DashboardRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -101,10 +114,20 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
+		0029D2652319FB0B00DBF06D /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				0029D26A231A07B200DBF06D /* Event+CoreDataClass.swift */,
+				0029D26B231A07B200DBF06D /* Event+CoreDataProperties.swift */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
 		0068498E2314BBBC00908085 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
 				0068498F2314BBD500908085 /* DashboardViewController.swift */,
+				0029D25F2318215C00DBF06D /* DashboardCollectionViewCell.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -113,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				00929BCE23146749006B8413 /* LoginGooleService.swift */,
+				0029D25A2317E5A900DBF06D /* LoginFacebookService.swift */,
+				0029D263231997A300DBF06D /* CoreDataManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -142,6 +167,7 @@
 			children = (
 				00929BAB23125C36006B8413 /* AppDelegate.swift */,
 				00929BAD23125C36006B8413 /* ViewController.swift */,
+				0029D2652319FB0B00DBF06D /* CoreDataModels */,
 				0029D25523179ADC00DBF06D /* SplashScreen */,
 				006849912314BC0500908085 /* Helper */,
 				0068498E2314BBBC00908085 /* Dashboard */,
@@ -382,16 +408,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				006849952314BF9400908085 /* ForgotPassowrdViewController.swift in Sources */,
+				0029D26D231A07B200DBF06D /* Event+CoreDataProperties.swift in Sources */,
 				0029D25923179B4800DBF06D /* InitialRouter.swift in Sources */,
 				00929BAE23125C36006B8413 /* ViewController.swift in Sources */,
+				0029D264231997A300DBF06D /* CoreDataManager.swift in Sources */,
 				006849902314BBD500908085 /* DashboardViewController.swift in Sources */,
 				00929BB423125C36006B8413 /* MoneyManagerTest.xcdatamodeld in Sources */,
+				0029D25B2317E5A900DBF06D /* LoginFacebookService.swift in Sources */,
 				0029D254231799F100DBF06D /* LoginNavigator.swift in Sources */,
 				00929BCF23146749006B8413 /* LoginGooleService.swift in Sources */,
 				006849972314BFAE00908085 /* SignUpViewController.swift in Sources */,
+				0029D26C231A07B200DBF06D /* Event+CoreDataClass.swift in Sources */,
 				00929BD423146FEA006B8413 /* LoginViewController.swift in Sources */,
 				0029D25723179AF500DBF06D /* SplashScreenViewController.swift in Sources */,
+				0029D2602318215C00DBF06D /* DashboardCollectionViewCell.swift in Sources */,
 				00929BAC23125C36006B8413 /* AppDelegate.swift in Sources */,
+				0029D25E23181D7200DBF06D /* DashboardRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9C645VSQP;
 				INFOPLIST_FILE = MoneyManagerTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C9C645VSQP;
 				INFOPLIST_FILE = MoneyManagerTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
